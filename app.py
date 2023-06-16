@@ -8,6 +8,7 @@ Created on Tue Jun  6 22:46:17 2023
 import streamlit as st
 import pickle
 import pandas as pd
+from sklearn.tree import DecisionTreeRegressor
 
 # Load the trained model from the pickled file
 with open('water_quality_dt.pickle', 'rb') as file:

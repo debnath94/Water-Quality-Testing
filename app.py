@@ -10,7 +10,7 @@ import pickle
 import pandas as pd
 
 # Load the trained model from the pickled file
-with open('E:/LiveProject/Water Quality Testing/water_quality_dt.pickle', 'rb') as file:
+with open('water_quality_dt.pickle', 'rb') as file:
     model = pickle. load(file)
 
 # Create a function to preprocess the input data

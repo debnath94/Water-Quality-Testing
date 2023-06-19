@@ -29,19 +29,16 @@ if st. button("Predict"):
     st.write("The predicted PH value is", prediction[0])
     
 # Perform actions based on the predicted pH value
-    if predictions[0] < 7:
+    if prediction[0] < 7:
         st.subheader("Prediction is less than 7")
         st.write("Water is unhealthy")
-    elif predictions[0] > 7:
+    elif prediction[0] > 7:
         st.subheader("Prediction is greater than 7")
         st.write("water is healthy")
     else:
         st.subheader("Prediction is equal to 7")
         st.write("water is healthy to drink")
 
-# Run the Streamlit web application
-if __name__ == '__main__':
-    main()
 
 
 
